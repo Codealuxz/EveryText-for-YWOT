@@ -6,8 +6,8 @@ import threading
 from tkinter import filedialog, messagebox
 
 # Global variables
-POS_X = -200
-POS_Y = -17
+POS_X = 0
+POS_Y = 0
 file_path = ""
 lines = []
 trame = 1
