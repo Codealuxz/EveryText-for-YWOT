@@ -251,6 +251,5 @@ console = ctk.CTkTextbox(
 )
 console.pack(fill="both", expand=True, padx=5, pady=(0, 5))
 
-
 # Run the application
 app.mainloop()
