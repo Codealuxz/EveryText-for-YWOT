@@ -23,8 +23,10 @@ request_delay = 0.1  # Default delay in seconds
 
 websocket_urls = {
     "YWOT": "wss://www.yourworldoftext.com/ws/",
-    "AYWEN": "wss://ourworldoftext.com/aywen/ws/",
-    "FRANCE": "wss://ourworldoftext.com/france/ws/"
+    "AYWEN YWOT": "wss://www.yourworldoftext.com/aywen/ws/",
+    "OWOT": "wss://www.ourworldoftext.com/ws/",
+    "AYWEN OWOT": "wss://www.ourworldoftext.com/aywen/ws/",
+    "FRANCE OWOT": "wss://ourworldoftext.com/france/ws/"
 }
 
 def send_data():
@@ -97,6 +99,8 @@ def send_data():
         except OSError as e:
             console_log(f"OSError: {e}")
             break
+        time.sleep(0.1) # Add a slight delay to avoid overwhelming the server 
+    
 
 def on_open(websocket):
     global reconnect_attempts
