@@ -173,6 +173,8 @@ app.resizable(False, False)
 title_label = ctk.CTkLabel(app, text="ASCII Art WebSocket Bot", font=("Arial", 20, "bold"))
 title_label.pack(pady=10)
 
+title_label = ctk.CTkLabel(app, text="Tow Team Bot\ndsc.gg/towteam", font=("Arial", 20), text_color="white")
+title_label.pack(side="bottom", pady=20)
 # File selection
 file_frame = ctk.CTkFrame(app)
 file_frame.pack(pady=10, fill="x", padx=20)
