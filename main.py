@@ -21,6 +21,12 @@ max_reconnect_attempts = 5
 websocket_url = "wss://www.yourworldoftext.com/ws/"
 request_delay = 0.1  # Default delay in seconds
 
+websocket_urls = {
+    "YWOT": "wss://www.yourworldoftext.com/ws/",
+    "AYWEN": "wss://ourworldoftext.com/aywen/ws/",
+    "FRANCE": "wss://ourworldoftext.com/france/ws/"
+}
+
 def send_data():
     global trame, x, y, is_running, is_paused, ws
 
@@ -134,7 +140,7 @@ def start_websocket():
 
         POS_X = int(entry_x.get())
         POS_Y = int(entry_y.get())
-        websocket_url = websocket_combobox.get()
+        websocket_url = websocket_urls[websocket_combobox.get()]
         request_delay = float(delay_entry.get())
 
         is_running = True
@@ -229,11 +235,7 @@ websocket_frame.pack(pady=10)
 websocket_label = ctk.CTkLabel(websocket_frame, text="Select WebSocket:", font=("Arial", 12))
 websocket_label.grid(row=0, column=0, padx=10)
 
-websocket_combobox = ttk.Combobox(websocket_frame, values=[
-    "wss://www.yourworldoftext.com/ws/",
-    "wss://ourworldoftext.com/aywen/ws/",
-    "wss://ourworldoftext.com/france/ws/"
-])
+websocket_combobox = ttk.Combobox(websocket_frame, values=list(websocket_urls.keys()))
 websocket_combobox.grid(row=0, column=1, padx=10)
 websocket_combobox.current(0)  # Set default value
 
