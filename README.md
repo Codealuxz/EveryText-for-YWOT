@@ -28,10 +28,10 @@ python main.py
 You need to set the bot in the interface:
 
 - For the ASCII art, it is a file. Place it here:  
-![alt text](https://raw.githubusercontent.com/Codealuxz/EveryText-for-YWOT/refs/heads/main/file_image.png)
+![alt text](https://raw.githubusercontent.com/Codealuxz/EveryText-for-YWOT/refs/heads/main/img/file_image.png)
   
 - For the coordinates, set them here:  
-![alt text](https://raw.githubusercontent.com/Codealuxz/EveryText-for-YWOT/refs/heads/main/co_image.png)
+![alt text](https://raw.githubusercontent.com/Codealuxz/EveryText-for-YWOT/refs/heads/main/img/co_image.png)
 
 ## Additional Notes
 
