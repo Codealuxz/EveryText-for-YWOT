@@ -8,7 +8,7 @@ Is a bot of the web site yourworldoftext.com . The bot use websocket for build y
 Make sure Python is installed on your machine. Then, install the required libraries using the following command:
 
 ```bash
-pip install json time websocket-client customtkinter tk
+pip install websocket-client customtkinter tk
 ```
 
 ---
